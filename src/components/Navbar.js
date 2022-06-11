@@ -21,7 +21,7 @@ function Navbar() {
                     <a href="/" className="nav__link">Blogs</a>
                     <a href="/about" className="nav__link">About</a>
                     <a href="/create" className="nav__link">New Blog</a>
-                    <a href="https://github.com/Sneakad" className="nav__link" target="_blank">Github</a>
+                    <a href="https://github.com/Sneakad" className="nav__link" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
             </div>
         </div>
