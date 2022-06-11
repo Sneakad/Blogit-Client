@@ -23,7 +23,7 @@ function Details() {
         }).catch((err) => {
             console.log(err)
         })
-    }, [])
+    })
 
     const mydata = {
         utitle: details.title,
