@@ -35,7 +35,7 @@ function Details() {
     return (
         <div className='details'>
             <h1>{details.title}</h1>
-            <h2 class="snippet">{details.snippet}</h2>
+            <h2 className="snippet">{details.snippet}</h2>
             <div>{details.body}</div>
             <button onClick={deletedb} className='delete'>Delete</button>
 
