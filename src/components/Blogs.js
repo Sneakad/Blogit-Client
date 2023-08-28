@@ -7,7 +7,7 @@ const Blogs = () => {
     const [datalist, setDatalist] = useState([]);
 
     const cat = () => {
-        Axios.get('https://blogit96.herokuapp.com/read').then((response) => {
+        Axios.get('https://blg-1jyh.onrender.com/read').then((response) => {
             console.log(response.data)
             setDatalist(response.data)
         }).catch((err) => {
