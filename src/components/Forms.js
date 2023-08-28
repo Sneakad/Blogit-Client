@@ -11,7 +11,7 @@ function Forms() {
 
     const navigate = useNavigate();
     const addData = () => {
-        axios.post('https://blogit96.herokuapp.com/insert', { title: title, snippet: snippet, desc: desc })
+        axios.post('https://blg-1jyh.onrender.com/insert', { title: title, snippet: snippet, desc: desc })
         navigate("/");
     }
 
