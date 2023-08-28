@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 function Update() {
-    //we get the json data from the Link fron details page and then we access it in the input
+    //we get the json data from the Link from details page and then we access it in the input
     const location = useLocation();
     const data = location.state;
     console.log(data);
@@ -19,7 +19,7 @@ function Update() {
     const navigate = useNavigate();
 
     const updatedata = () => {
-        axios.patch(`https://blogit96.herokuapp.com/updated`, { utitle: utitle, usnippet: usnippet, udesc: udesc, id: id }).then((res) => {
+        axios.patch(`https://blg-1jyh.onrender.com/updated`, { utitle: utitle, usnippet: usnippet, udesc: udesc, id: id }).then((res) => {
             console.log(res);
             navigate('/');
         })
