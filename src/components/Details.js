@@ -9,7 +9,7 @@ function Details() {
     const [details, setDetails] = useState({})
 
     const deletedb = () => {
-        axios.post('https://blogit96.herokuapp.com/delete', { id: window.location.search.slice(1, window.location.search.length) });
+        axios.post('https://blg-1jyh.onrender.com/delete', { id: window.location.search.slice(1, window.location.search.length) });
         navigate("/");
     }
 
@@ -17,7 +17,7 @@ function Details() {
     useEffect(() => {
         // params = new URLSearchParams(window.location.search)
         // console.log(window.location.search.slice(1, window.location.search.length))
-        axios.post(`https://blogit96.herokuapp.com/getbyid`, { id: window.location.search.slice(1, window.location.search.length) }).then((response) => {
+        axios.post(`https://blg-1jyh.onrender.com/getbyid`, { id: window.location.search.slice(1, window.location.search.length) }).then((response) => {
             setDetails(response.data)
             console.log(details)
         }).catch((err) => {
